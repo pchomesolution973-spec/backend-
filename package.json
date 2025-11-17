@@ -7,8 +7,7 @@
     "dev": "node src/index.js",
     "start": "node src/index.js",
     "prisma:generate": "prisma generate",
-"postinstall": "prisma generate"
-    "prisma": "prisma"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "latest",
@@ -20,4 +19,3 @@
     "prisma": "latest"
   }
 }
-

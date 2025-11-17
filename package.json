@@ -1,5 +1,5 @@
 {
-  "name":  "prestservice97-backend",
+  "name": "prestservice97-backend",
   "version": "1.0.0",
   "type": "module",
   "main": "src/index.js",
@@ -7,8 +7,7 @@
     "dev": "node src/index.js",
     "start": "node src/index.js",
     "prisma:generate": "prisma generate",
-    "postinstall": "prisma generate"
-    "migrate": "prisma migrate deploy"
+    "migrate": "prisma migrate deploy",
     "postinstall": "prisma generate && prisma migrate deploy"
   },
   "dependencies": {
@@ -21,6 +20,4 @@
     "prisma": "latest"
   }
 }
-
-
 

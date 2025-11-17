@@ -30,9 +30,18 @@ model Intervention {
 }
 
 model Message {
-  id             Int        @id @default(autoincrement())
+  id             Int          @id @default(autoincrement())
   content        String
-  senderId       Int
+  createdAt      DateTime     @default(now())
+
+  // Relation avec User
+  userId         Int
+  user           User         @relation(fields: [userId], references: [id])
+
+  // Relation avec Intervention
   interventionId Int
-  createdAt      DateTime   @default(now())
+  intervention   Intervention @relation(fields: [interventionId], references: [id])
 }
+
+}
+

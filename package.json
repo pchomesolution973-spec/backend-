@@ -1,5 +1,5 @@
 {
-  "name": "prestservice97-backend",
+  "name":  "prestservice97-backend",
   "version": "1.0.0",
   "type": "module",
   "main": "src/index.js",
@@ -20,4 +20,5 @@
     "prisma": "latest"
   }
 }
+
 

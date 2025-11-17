@@ -8,6 +8,7 @@
     "start": "node src/index.js",
     "prisma:generate": "prisma generate",
     "migrate": "prisma migrate deploy",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "latest",
@@ -19,5 +20,6 @@
     "prisma": "latest"
   }
 }
+
 
 

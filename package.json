@@ -9,6 +9,7 @@
     "prisma:generate": "prisma generate",
     "postinstall": "prisma generate"
     "migrate": "prisma migrate deploy"
+    "postinstall": "prisma generate && prisma migrate deploy"
   },
   "dependencies": {
     "@prisma/client": "latest",
@@ -20,5 +21,6 @@
     "prisma": "latest"
   }
 }
+
 
 

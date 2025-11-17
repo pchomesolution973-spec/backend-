@@ -39,7 +39,9 @@ model Message {
 
   interventionId  Int
   intervention    Intervention   @relation(fields: [interventionId], references: [id])
+
 }
+
 
 
 

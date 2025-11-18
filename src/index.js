@@ -1,16 +1,10 @@
-import express from "express";
-import cors from "cors";
+import app from "./routes.js";
 import dotenv from "dotenv";
-import routes from "./routes.js";
 
 dotenv.config();
 
-const app = express();
-app.use(cors());
-app.use(express.json());
+const PORT = process.env.PORT || 3000;
 
-app.use("/api", routes);
-
-app.listen(process.env.PORT || 3001, () =>
-  console.log("Backend API running...")
-);
+app.listen(PORT, () => {
+  console.log("Backend API running on port " + PORT);
+});
